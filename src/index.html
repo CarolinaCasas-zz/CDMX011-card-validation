@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html>
+  <head >
+    <meta charset="utf-8">
+    <title>Card-Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Tarjeta de crédito válida</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <header class="green-section">
+      <img id="img-money" src="./img/money-bag.png">
+      <h1>Card<br>Validation</h1>
+    </header>
 
-<body>
-  <header>
-    <h1>Peliculitas</h1>
-  </header>
-  <nav>
-    <ul>
-      <li id="inicio">Inicio</li>
-      <li id="pagos">Pagos</li>
-      <li id="cuenta">Cuenta</li>
-    </ul>
-  </nav>
-  <main>
-    <h2>Suscribete aqui</h2>
-    <h3>Ingresa los datos de tu Tarjeta</h3>
-    <img src="img\tarjeta.png" alt="esta es una imagen">
-    <div id="digitosEnmascarados"></div>
+    <main>
+      <div class="yellow-section" id="principal-text">
+        <h2>Mantén tus ganancias seguras</h2>
+        <h3>Valida las tarjetas de tus clientes aquí</h3>
+      </div>
+      <div class="green-section"></div>
+      <div id="content-card">
+        <div id="digitosEnmascarados"></div>
+      </div>
+
       <form action="#" id="seccion1">
         <input type="text" required="" id="digitos" maxlength="16" placeholder="Ingresa los 16 dígitos de tu tarjeta">
-        <input type="number" id="vencimiento" placeholder="¿Cuándo vence?">
-        <input type="number" id="cvv" placeholder="cvv">
-        <button id="pay">Pagar</button>
+        <button id="pay">Validar</button>
       </form>
-    <div id="seccion2" style="display: none;">
-      <h3 id="validacion"></h3>
-      <button id="regresar" onclick="location.reload()">Regresar</button>
-    </div>
-  </main>
-  <footer></footer>
-  <script src="index.js" type="module"></script>
-</body>
 
+
+      <div id="seccion2" style="display: none;">
+        <h3 id="validacion"></h3>
+        <button id="regresar" onclick="location.reload()">Regresar</button>
+      </div>
+    </main>
+    <footer class="yellow-section">
+      <h6>Derechos reservados</h6>
+      <h6>Políticas de privacidad</h6>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
