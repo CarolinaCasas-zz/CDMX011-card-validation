@@ -1,13 +1,34 @@
 body{
     margin: 0px;
+    background-image: url("./img/edificios.jpg");
 }
 
-main{
-    display: flex;
-    flex-direction: column;
+.card{
+background-color: brown;
+position: absolute;
+width: 40vw;
+height: 60vh;
+left: 53%;
+top: 15%;
 }
+
+#content-card{
+width: 30vw;
+height: 50vh;
+border-radius: 18px;
+background-color: aqua;    
+} 
+
+footer{
+    display: flex;
+    height: 12vh;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
 .green-section{
-    background:#4EC3B9;
+    background:#4ec3b9ce;
     width: 45vw;
     height: 20vh;
    
@@ -26,12 +47,17 @@ margin-right: 15px;
  height: 60px;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
 #principal-text{
     top: 0px;
     height: 45vh;
 }
 
 .yellow-section{
-   background-color: #FBD14E;
+   background-color: #fbd04e8c;
    width: 45vw;
 }

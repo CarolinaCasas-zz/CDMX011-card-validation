@@ -6,33 +6,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body> 
     <header class="green-section">
       <img id="img-money" src="./img/money-bag.png">
       <h1>Card<br>Validation</h1>
     </header>
 
-    <main>
-      <div class="yellow-section" id="principal-text">
-        <h2>Mantén tus ganancias seguras</h2>
-        <h3>Valida las tarjetas de tus clientes aquí</h3>
-      </div>
-      <div class="green-section"></div>
-      <div id="content-card">
-        <div id="digitosEnmascarados"></div>
-      </div>
-
-      <form action="#" id="seccion1">
-        <input type="text" required="" id="digitos" maxlength="16" placeholder="Ingresa los 16 dígitos de tu tarjeta">
-        <button id="pay">Validar</button>
-      </form>
+      <section class="banner">
+        <div class="yellow-section" id="principal-text">
+          <h2>Mantén tus ganancias seguras</h2>
+          <h3>Valida las tarjetas de tus clientes aquí</h3>
+        </div>
+        <div class="green-section"></div>
+      </section>
 
 
-      <div id="seccion2" style="display: none;">
-        <h3 id="validacion"></h3>
-        <button id="regresar" onclick="location.reload()">Regresar</button>
-      </div>
-    </main>
+      <section class="card">
+        <div id="content-card">
+          <h1>Aqui</h1>
+          <div id="digitosEnmascarados"></div>
+        </div>
+        <form action="#" id="seccion1">
+          <input type="text" required="" id="digitos" maxlength="16" placeholder="Ingresa los 16 dígitos de tu tarjeta">
+          <button id="pay">Validar</button>
+        </form>
+
+
+        <div id="seccion2" style="display: none;">
+          <h3 id="validacion"></h3>
+          <button id="regresar" onclick="location.reload()">Regresar</button>
+        </div>
+
+      </section>
+
     <footer class="yellow-section">
       <h6>Derechos reservados</h6>
       <h6>Políticas de privacidad</h6>
